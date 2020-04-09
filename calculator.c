@@ -4,6 +4,10 @@
 float n1, n2;
 char op;
 
+char operation() {
+    printf("Type M=MULT, D=DIV, A=ADD, S=SUB, P=POW and R=SQRT:\n");
+    scanf("%c", &op);
+}
 float scan() {
     scanf("%f", &n1);
     scanf("%f", &n2);
@@ -13,10 +17,8 @@ float root() {
     printf("%f", sqrt(n1));
 }
 
-int main ()
-{
-    printf("Type M=MULT, D=DIV, A=ADD, S=SUB, P=POW and R=SQRT:\n");
-    scanf("%c", &op);
+int main () {
+    operation();
     switch (op)
     {
         case 'M' :
